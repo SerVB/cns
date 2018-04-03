@@ -15,11 +15,9 @@
  */
 package com.github.servb.cns.preload;
 
-import com.github.servb.cns.data.Language;
-import com.github.servb.cns.data.Weapon;
-import java.io.File;
-import java.util.HashSet;
-import java.util.Set;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.files.FileHandle;
+import java.io.FileNotFoundException;
 
 /**
  * The Container class.
@@ -30,12 +28,19 @@ import java.util.Set;
  */
 public final class Preloader {
 
-    private final Set<Language> languages = new HashSet<>();
-    private final Set<Weapon> weapons = new HashSet<>();
-
-
-    public Preloader(final File dataFolder) {
-        throw new UnsupportedOperationException("TODO!");
+    public Preloader(final FileHandle cnsDir) throws FileNotFoundException {
+        if (!cnsDir.exists()) {
+            throw new FileNotFoundException("Root CNS dir not found: " + cnsDir.path());
+        }
+        final FileHandle dataDir = cnsDir.child("data\\");
+        if (!dataDir.exists()) {
+            throw new FileNotFoundException("Data dir not found: " + dataDir.path());
+        }
+        final FileHandle preloadDir = dataDir.child("preload\\");
+        if (!preloadDir.exists()) {
+            throw new FileNotFoundException("Preload dir not found: " + preloadDir.path());
+        }
+        Gdx.app.log("info", "Preload dir found");
     }
 
 }

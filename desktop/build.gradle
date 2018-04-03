@@ -1,7 +1,13 @@
 apply plugin: "java"
 
-sourceCompatibility = 1.6
-sourceSets.main.java.srcDirs = [ "src/" ]
+sourceCompatibility = 1.7
+
+sourceSets.main.java.srcDirs = [ "src/main/java/" ]
+sourceSets.test.java.srcDirs = [ "src/test/java/" ]
+
+dependencies {
+    testCompile "junit:junit:4.11"
+}
 
 project.ext.mainClassName = "com.github.servb.cns.desktop.DesktopLauncher"
 project.ext.assetsDir = new File("../android/assets");
@@ -28,7 +34,7 @@ task dist(type: Jar) {
     from files(sourceSets.main.output.resourcesDir)
     from {configurations.compile.collect {zipTree(it)}}
     from files(project.assetsDir);
- 
+
     manifest {
         attributes 'Main-Class': project.mainClassName
     }
