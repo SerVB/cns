@@ -1,0 +1,11 @@
+<hierarchy>
+	<object>/shader/diff-ac.xml</object>
+	<object>/shader/tex-a_diff-ac.xml</object>
+	<object>/shader/tex-a_diff-ac_add.xml</object>
+	<object>/shader/tex-ac.xml</object>
+	<object>/shader/tex-ac_add.xml</object>
+	<object>/shader/tex-ac_diff-a.xml</object>
+	<object>/shader/tex-ac_diff-a_add.xml</object>
+	<object>/shader/tex-ac_diff-c_mod.xml</object>
+	<object>/shader/tex-c_diff-ac.xml</object>
+</hierarchy>

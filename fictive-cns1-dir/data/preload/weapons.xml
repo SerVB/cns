@@ -1,0 +1,22 @@
+<hierarchy>
+	<object>/weapon/default.xml</object>
+	<object>/weapon/cannon1.xml</object>
+	<object>/weapon/cannon2.xml</object>
+	<object>/weapon/cannon3.xml</object>
+	<object>/weapon/shrapnel1.xml</object>
+	<object>/weapon/shrapnel2.xml</object>
+	<object>/weapon/shrapnel3.xml</object>
+	<object>/weapon/impulse1.xml</object>
+	<object>/weapon/impulse2.xml</object>
+	<object>/weapon/impulse3.xml</object>
+	<object>/weapon/rocket1.xml</object>
+	<object>/weapon/rocket2.xml</object>
+	<object>/weapon/rocket3.xml</object>
+	<object>/weapon/plasma1.xml</object>
+	<object>/weapon/plasma2.xml</object>
+	<object>/weapon/plasma3.xml</object>
+	<object>/weapon/shock1.xml</object>
+	<object>/weapon/shock2.xml</object>
+	<object>/weapon/shock3.xml</object>
+	<object>/weapon/planet-nuke.xml</object>
+</hierarchy>

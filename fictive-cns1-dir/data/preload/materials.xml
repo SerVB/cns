@@ -1,0 +1,11 @@
+<hierarchy>
+	<object>/material/diff-ac.xml</object>
+	<object>/material/tex-a_diff-ac.xml</object>
+	<object>/material/tex-a_diff-ac_add.xml</object>
+	<object>/material/tex-ac.xml</object>
+	<object>/material/tex-ac_add.xml</object>
+	<object>/material/tex-ac_diff-a.xml</object>
+	<object>/material/tex-ac_diff-a_add.xml</object>
+	<object>/material/tex-ac_diff-c_mod.xml</object>
+	<object>/material/tex-c_diff-ac.xml</object>
+</hierarchy>

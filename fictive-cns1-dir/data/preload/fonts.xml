@@ -1,0 +1,6 @@
+<hierarchy>
+	<object>/font/font1-cyrillic.xml</object>
+	<object>/font/font2-cyrillic.xml</object>
+	<object>/font/font1-european.xml</object>
+	<object>/font/font2-european.xml</object>
+</hierarchy>

@@ -1,0 +1,33 @@
+<hierarchy>
+	<object>/mesh/none.xml</object>
+	<object>/mesh/screen-black.xml</object>
+	<object>/mesh/centered-256x256.xml</object>
+	<object>/mesh/centered-128x128.xml</object>
+	<object>/mesh/centered-128x32.xml</object>
+	<object>/mesh/centered-12x12.xml</object>
+	<object>/mesh/centered-16x16.xml</object>
+	<object>/mesh/centered-1x1.xml</object>
+	<object>/mesh/centered-256x256.xml</object>
+	<object>/mesh/centered-256x32.xml</object>
+	<object>/mesh/centered-256x512.xml</object>
+	<object>/mesh/centered-256x64.xml</object>
+	<object>/mesh/centered-32x32.xml</object>
+	<object>/mesh/centered-48x48.xml</object>
+	<object>/mesh/centered-512x512.xml</object>
+	<object>/mesh/centered-512x128.xml</object>
+	<object>/mesh/centered-512x64.xml</object>
+	<object>/mesh/centered-64x32.xml</object>
+	<object>/mesh/centered-64x64.xml</object>
+	<object>/mesh/centered-90x90.xml</object>
+	<object>/mesh/hint.xml</object>
+	<object>/mesh/hint-dark.xml</object>
+	<object>/mesh/gui/stat-bar.xml</object>
+	<object>/mesh/gui/stat-bar-highlight.xml</object>
+	<object>/mesh/gui/ship/arrow0000.xml</object>
+	<object>/mesh/gui/ship/arrow0001.xml</object>
+	<object>/mesh/gui/ship/arrow0002.xml</object>
+	<object>/mesh/gui/ship/arrow0003.xml</object>
+	<object>/mesh/gui/ship/arrow0004.xml</object>
+	<object>/mesh/gui/ship/arrow0005.xml</object>
+	<object>/mesh/gui/affiliate.xml</object>
+</hierarchy>
