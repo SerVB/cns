@@ -16,20 +16,16 @@
 package com.github.servb.cns.preload;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.github.servb.cns.CnsGame;
+import com.github.servb.cns.test.GameTest;
 import java.io.FileNotFoundException;
 import static org.junit.Assert.fail;
 import org.junit.Test;
 
-public class PreloaderTest {
+public class PreloaderTest extends GameTest {
 
     @Test
     public void testConstructor() {
-        LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-        new LwjglApplication(new CnsGame(), config);
-        final String fictiveDir = "C:\\Users\\servb\\Dropbox\\CNS\\cns\\fictive-cns1-dir\\";
+        final String fictiveDir = "Dropbox/CNS/cns/fictive-cns1-dir/";
         try {
             final Preloader preloader = new Preloader(Gdx.files.external(fictiveDir));
         } catch (final FileNotFoundException ex) {
