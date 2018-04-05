@@ -28,19 +28,27 @@ import java.io.FileNotFoundException;
  */
 public final class Preloader {
 
+    public static final String DATA_DIR_NAME = "data/";
+    public static final String PRELOAD_DIR_NAME = "preload/";
+
     public Preloader(final FileHandle cnsDir) throws FileNotFoundException {
-        if (!cnsDir.exists()) {
-            throw new FileNotFoundException("Root CNS dir not found: " + cnsDir.path());
+        checkFile(cnsDir, "Root CNS dir");
+        final FileHandle dataDir = getCheckedChild(cnsDir, DATA_DIR_NAME, "Data dir");
+        final FileHandle preloadDir = getCheckedChild(dataDir, PRELOAD_DIR_NAME, "Preload dir");
+        Gdx.app.log("OK", "Preload dir found");
+    }
+
+    private static FileHandle getCheckedChild(final FileHandle parent, final String path, final String name)
+            throws FileNotFoundException {
+        final FileHandle child = parent.child(path);
+        checkFile(child, name);
+        return child;
+    }
+
+    private static void checkFile(final FileHandle fh, final String name) throws FileNotFoundException {
+        if (!fh.exists()) {
+            throw new FileNotFoundException(name + " not found: " + fh.path());
         }
-        final FileHandle dataDir = cnsDir.child("data\\");
-        if (!dataDir.exists()) {
-            throw new FileNotFoundException("Data dir not found: " + dataDir.path());
-        }
-        final FileHandle preloadDir = dataDir.child("preload\\");
-        if (!preloadDir.exists()) {
-            throw new FileNotFoundException("Preload dir not found: " + preloadDir.path());
-        }
-        Gdx.app.log("info", "Preload dir found");
     }
 
 }
