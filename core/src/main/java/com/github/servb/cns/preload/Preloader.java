@@ -20,13 +20,15 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.XmlReader;
 import com.badlogic.gdx.utils.XmlReader.Element;
+import com.github.servb.cns.file.FontFile;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * The Container class.
  * <p>
- * An instance of the class is immutable.
+ * TODO: An instance of the class is immutable.
  *
  * @author SerVB
  */
@@ -39,13 +41,19 @@ public final class Preloader {
 
     public static final String FILE_LINK_ELEMENT = "object";
 
+    private Map<String, FontFile> fonts;
+
     public Preloader(final FileHandle cnsDir) throws FileNotFoundException {
         checkFile(cnsDir, "Root CNS dir");
         final FileHandle dataDir = getCheckedChild(cnsDir, DATA_DIR_NAME, "Data dir");
         final FileHandle preloadDir = getCheckedChild(dataDir, PRELOAD_DIR_NAME, "Preload dir");
         Gdx.app.log("OK", "Preload dir found");
 
-        loadFonts(cnsDir, preloadDir);
+        loadFonts(dataDir, preloadDir);
+    }
+
+    public void dispose() {
+        // TODO: implement
     }
 
     private static FileHandle getCheckedChild(final FileHandle parent, final String path, final String name)
@@ -72,9 +80,13 @@ public final class Preloader {
         return result;
     }
 
-    private void loadFonts(final FileHandle cnsDir, final FileHandle preloadDir) throws FileNotFoundException {
+    private void loadFonts(final FileHandle dataDir, final FileHandle preloadDir) throws FileNotFoundException {
         final FileHandle fontsFile = getCheckedChild(preloadDir, FONTS_FILE_NAME, "Fonts file");
         final String[] fontPaths = getChildrenPaths(fontsFile);
-        Gdx.app.log("debug", Arrays.toString(fontPaths));
+        final Map<String, FontFile> readFonts = new HashMap<>();
+        for (final String fontPath : fontPaths) {
+            final FileHandle font = getCheckedChild(dataDir, fontPath, "Font");
+            fonts.put(fontPath, new FontFile(dataDir, font));
+        }
     }
 }
