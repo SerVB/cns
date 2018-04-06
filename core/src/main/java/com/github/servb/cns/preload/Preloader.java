@@ -22,6 +22,7 @@ import com.badlogic.gdx.utils.XmlReader;
 import com.badlogic.gdx.utils.XmlReader.Element;
 import com.github.servb.cns.file.FontFile;
 import java.io.FileNotFoundException;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -86,7 +87,8 @@ public final class Preloader {
         final Map<String, FontFile> readFonts = new HashMap<>();
         for (final String fontPath : fontPaths) {
             final FileHandle font = getCheckedChild(dataDir, fontPath, "Font");
-            fonts.put(fontPath, new FontFile(dataDir, font));
+            readFonts.put(fontPath, new FontFile(dataDir, font));
         }
+        fonts = Collections.unmodifiableMap(readFonts);
     }
 }
