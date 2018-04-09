@@ -21,56 +21,67 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.XmlReader;
 import com.badlogic.gdx.utils.XmlReader.Element;
 import com.github.servb.cns.file.FontFile;
+import com.github.servb.cns.util.Files;
 import java.io.FileNotFoundException;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * The Container class.
- * <p>
- * TODO: An instance of the class is immutable.
+ * The Preloader class contains game assets.
+ * Provides static methods and fields to works with assets.
+ * Initializes with load(...), disposes with dispose() methods.
  *
  * @author SerVB
  */
 public final class Preloader {
 
-    public static final String DATA_DIR_NAME = "data/";
-    public static final String PRELOAD_DIR_NAME = "preload/";
+    /** Prevents from creating an instance of the class. */
+    private Preloader() {
+    }
 
+    /** Relative path to the "data/" dir from the CNS dir. */
+    public static final String DATA_DIR_NAME = "data/";
+    /** Relative path to the "preload/" dir from the "data/" dir. */
+    public static final String PRELOAD_DIR_NAME = "preload/";
+    /** Relative path to the "language/" dir from the "data/" dir. */
+    public static final String LANGUAGE_DIR_NAME = "language/";
+
+    /** The fonts file name in the "preload/" dir. */
     public static final String FONTS_FILE_NAME = "fonts.xml";
 
+    /** The tag name in preload file contains the path to file to be preloaded. */
     public static final String FILE_LINK_ELEMENT = "object";
 
-    private Map<String, FontFile> fonts;
+    /** Fonts container (Path from the CNS dir : FontFile). */
+    public static Map<String, FontFile> fonts;
 
-    public Preloader(final FileHandle cnsDir) throws FileNotFoundException {
-        checkFile(cnsDir, "Root CNS dir");
-        final FileHandle dataDir = getCheckedChild(cnsDir, DATA_DIR_NAME, "Data dir");
-        final FileHandle preloadDir = getCheckedChild(dataDir, PRELOAD_DIR_NAME, "Preload dir");
+    /**
+     * Launches the Preloader. Initializes containers.
+     *
+     * @param cnsDir                    The CNS dir (which contains "data/" dir).
+     * @throws FileNotFoundException    If there is no needed file.
+     */
+    public static void load(final FileHandle cnsDir) throws FileNotFoundException {
+        Files.checkFile(cnsDir, "Root CNS dir");
+        final FileHandle dataDir = Files.getCheckedChild(cnsDir, DATA_DIR_NAME, "Data dir");
+        final FileHandle preloadDir = Files.getCheckedChild(dataDir, PRELOAD_DIR_NAME, "Preload dir");
         Gdx.app.log("OK", "Preload dir found");
 
         loadFonts(dataDir, preloadDir);
     }
 
-    public void dispose() {
+    public static void dispose() {
         // TODO: implement
     }
 
-    private static FileHandle getCheckedChild(final FileHandle parent, final String path, final String name)
-            throws FileNotFoundException {
-        final FileHandle child = parent.child(path);
-        checkFile(child, name);
-        return child;
-    }
-
-    private static void checkFile(final FileHandle fh, final String name) throws FileNotFoundException {
-        if (!fh.exists()) {
-            throw new FileNotFoundException(name + " not found: " + fh.path());
-        }
-    }
-
-    private static String[] getChildrenPaths(final FileHandle xmlFile) {
+    /**
+     * Returns the array of paths to files to be preloaded for the preload file.
+     *
+     * @param xmlFile   The preload file.
+     * @return          The array of paths.
+     */
+    public static String[] getChildrenPaths(final FileHandle xmlFile) {
         final XmlReader xmlReader = new XmlReader();
         final Element hierarchy = xmlReader.parse(xmlFile);
         final Array<Element> links = hierarchy.getChildrenByName(FILE_LINK_ELEMENT);
@@ -81,12 +92,12 @@ public final class Preloader {
         return result;
     }
 
-    private void loadFonts(final FileHandle dataDir, final FileHandle preloadDir) throws FileNotFoundException {
-        final FileHandle fontsFile = getCheckedChild(preloadDir, FONTS_FILE_NAME, "Fonts file");
+    private static void loadFonts(final FileHandle dataDir, final FileHandle preloadDir) throws FileNotFoundException {
+        final FileHandle fontsFile = Files.getCheckedChild(preloadDir, FONTS_FILE_NAME, "Fonts file");
         final String[] fontPaths = getChildrenPaths(fontsFile);
         final Map<String, FontFile> readFonts = new HashMap<>();
         for (final String fontPath : fontPaths) {
-            final FileHandle font = getCheckedChild(dataDir, fontPath, "Font");
+            final FileHandle font = Files.getCheckedChild(dataDir, fontPath, "Font");
             readFonts.put(fontPath, new FontFile(dataDir, font));
         }
         fonts = Collections.unmodifiableMap(readFonts);

@@ -27,7 +27,7 @@ public class PreloaderTest extends GameTest {
     public void testConstructor() {
         final String fictiveDir = "Dropbox/CNS/cns/fictive-cns1-dir/";
         try {
-            final Preloader preloader = new Preloader(Gdx.files.external(fictiveDir));
+            Preloader.load(Gdx.files.external(fictiveDir));
         } catch (final FileNotFoundException ex) {
             Gdx.app.log("ex", "->", ex);
             fail("Exception is thrown...");
