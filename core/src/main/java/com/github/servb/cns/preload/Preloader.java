@@ -21,6 +21,7 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.XmlReader;
 import com.badlogic.gdx.utils.XmlReader.Element;
 import com.github.servb.cns.file.FontFile;
+import com.github.servb.cns.file.LanguageFile;
 import com.github.servb.cns.util.Files;
 import java.io.FileNotFoundException;
 import java.util.Collections;
@@ -55,6 +56,8 @@ public final class Preloader {
 
     /** Fonts container (Path from the CNS dir : FontFile). */
     public static Map<String, FontFile> fonts;
+    /** Languages container (Language name : LanguageFile). */
+    public static Map<String, LanguageFile> languages;
 
     /**
      * Launches the Preloader. Initializes containers.
@@ -66,9 +69,11 @@ public final class Preloader {
         Files.checkFile(cnsDir, "Root CNS dir");
         final FileHandle dataDir = Files.getCheckedChild(cnsDir, DATA_DIR_NAME, "Data dir");
         final FileHandle preloadDir = Files.getCheckedChild(dataDir, PRELOAD_DIR_NAME, "Preload dir");
-        Gdx.app.log("OK", "Preload dir found");
+        Gdx.app.log("Preloader", "OK. Preload dir found");
 
         loadFonts(dataDir, preloadDir);
+        loadLanguages(dataDir);
+        Gdx.app.log("Preloader", "OK. Preloaded");
     }
 
     public static void dispose() {
@@ -101,5 +106,17 @@ public final class Preloader {
             readFonts.put(fontPath, new FontFile(dataDir, font));
         }
         fonts = Collections.unmodifiableMap(readFonts);
+    }
+
+    private static void loadLanguages(final FileHandle dataDir)
+            throws FileNotFoundException {
+        final FileHandle languagesDir = Files.getCheckedChild(dataDir, LANGUAGE_DIR_NAME, "Languages dir");
+        final FileHandle[] languageFiles = languagesDir.list();
+        final Map<String, LanguageFile> readLanguages = new HashMap<>();
+        for (final FileHandle languageFile : languageFiles) {
+            final LanguageFile language = new LanguageFile(dataDir, languageFile);
+            readLanguages.put(language.getName(), language);
+        }
+        languages = Collections.unmodifiableMap(readLanguages);
     }
 }
