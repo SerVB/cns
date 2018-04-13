@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hierarchy>
+	<object name="Ukrainian">
+		<!-- language font files -->
+		<object name="font1">/font/font1-cyrillic.xml</object>
+		<object name="font2">/font/font2-cyrillic.xml</object>
+		
+		<!-- language native name -->
+		<object name="language">Ukrainian</object>
+
+		<!-- loading text on game start -->
+		<object name="loading">Завантаження... Зачекайте будьласка...</object>
+		<!-- loading text font id (exact font name in windows) -->
+		<object name="loadingFontID">Arial Cyr</object>
+
+		<!-- "yes" text in all confirmation boxes -->
+		<object name="yes">Так</object>
+		<!-- "no" text in all confirmation boxes -->
+		<object name="no">НI</object>
+		<!-- "ok" text in all confirmation boxes -->
+		<object name="ok">ОК</object>
+		<!-- "cancel" text in all confirmation boxes -->
+		<object name="cancel">Скасувати</object>
+		<!-- game paused text -->
+		<object name="gamePaused">ГРА ЗУПИНЕНА</object>
+		<!-- quit confirmation text -->
+		<object name="quitConfirmationText">Ви справдI бажаEте вийти?</object>
+		<!-- skip bonus level text -->
+		<object name="skipBonusLevelText">Ви справдI бажаEте пропустити&#13;    цей бонус-рIвень?</object>
+		<!-- hint that describes purpose of ship level up -->
+		<object name="hintIntroduction">&lt;---&#13;&#13;     Ці два жовтих та червоних індикатори&#13;     зліва показують наскільки багато пошкоджень може&#13;     витримати планета або корабель до того як він буде знищений&#13;&#13;     Якщо буде знищено корабель, його відновлять через певний&#13;     проміжок часу, але якщо прибульці знищать вашу&#13;     планету, гра буде закінчена.&#13;&#13;&lt;---</object>
+		<!-- hint that describes purpose of colored casks -->
+		<object name="hintCask">&lt;--- Стріляйте по кольоровим діжкам щоб випустити з них&#13;     їх смертоносний вміст на ваших ворогів</object>
+		<!-- hint that describes cask chain effects -->
+		<object name="hintChain">&lt;--- Кілька діжок можуть створити ланцюгову реакцію&#13;     Спробуйте вистрілити по цій діжці</object>
+		
+		<!-- hint that describes purpose of ship level up -->
+		<object name="hintShipLevelUp">&#13;&lt;--- ЗАРАЗ ВИ МОЖЕТЕ ПОКРАЩИТИ ВАШ КОРАБЕЛЬ !&#13;&#13;     Коли ви бачите зображення миші в цьому місці - це значить, що&#13;     ви можете покращити свій корабель натиснувши праву&#13;     клавішу миші у будь-який час.&#13;&#13;     Тоненька блакитна стрічка справа від індикатора&#13;     захисту корабля показує скільки ще очків вам треба&#13;     набрати, щоб мати можливість покращити корабель ще раз.&#13;&#13;     Зараз ви можете натиснути праву клавішу миші&#13;     та вибрати новий вид зброї.&#13;</object>
+		<!-- hint that describes purpose of planet level up -->
+		<object name="hintPlanetLevelUp">&#13;&lt;--- ЗАРАЗ ВИ МОЖЕТЕ ПОКРАЩИТИ ВАШУ ПЛАНЕТУ !&#13;&#13;     Коли ви бачите зображення миші в цьому місці - це значить, що&#13;     ви можете покращити свій корабель натиснувши праву&#13;     клавішу миші у будь-який час.&#13;&#13;     Тоненька зелена стрічка справа від індикатора&#13;     захисту планети показує скільки ще часу має сплинути&#13;     перш ніж ви зможете ще раз покращити планету.&#13;</object>
+		<!-- hint that describes automatical shhoting abilities of weapon -->
+		<object name="hintAutoWeapon">&lt;--- У ВАС Є НОВА ЗБРОЯ !&#13;&#13;     Всі види зброї мають здібність стріляти в автоматичному режимі&#13;     Просто натисніть та не відпускайте ліву клавішу миші&#13;     для того щоб робити черги вистрілів</object>
+
+		<!-- game results that displayed after every level -->
+		<object name="gameResults">      %s&#13;&#13;Ворогів знищено:           %d&#13;Зроблено пострілів:        %d&#13;Отримано бонусів:          %d&#13;Час:                       %d:%02d&#13;Очки:                      %d</object>
+
+		<!-- "Bonus level ticket acquired" text -->
+		<object name="bonusTicket">Отримано квиток &#13;на бонус-рIвень</object>
+
+		<!-- "Planet rescued" text in level complete screen -->
+		<object name="levelComplete">ПЛАНЕТА ВРЯТОВАНА</object>
+		<!-- "Play Next" text in level complete screen -->
+		<object name="playNext">Наступна </object>
+		<!-- "Restart" text in level complete screen -->
+		<object name="restart">Наново</object>
+
+		<!-- "Game over" text in game over screen -->
+		<object name="gameOver">   ГРА ЗАКIНЧЕНА   </object>
+		<!-- "Play again" text in game over screen -->
+		<object name="playAgain">Знову</object>
+		<!-- "Exit" text in game over screen -->
+		<object name="exit">ВихIд</object>
+
+		<!-- nag screen text -->
+		<object name="nagScreenText"> Повна версIя Clash 'N Slash&#13;        мIстить:&#13;&#13;  - 70+15 дивовижних рIвнIв&#13;  - 19 видIв зброI&#13;  - БIльш нIж 50 ворогIв&#13;  - 17 унIкальних бонуси&#13;  - ВIдсутня реклама&#13;  - Необмежений час гри&#13;  - ПIдтримка по e-mail</object>
+		<!-- Buy NOW button -->
+		<object name="buyNow">Купити</object>
+
+		<!-- "Level" text in game -->
+		<object name="level">РIВЕНЬ</object>
+		<!-- "Bonus level" text in game -->
+		<object name="bonusLevel">          БОНУС-РIВЕНЬ          &#13; натиснIть ESC щоб пропустити </object>
+   	<!-- "press right mouse button" text in game -->
+		<object name="pressRMB">НатиснIть&#13;праву клавIшу</object>
+		<!-- "right click to reload" text in game -->
+		<object name="reload">Натисніть праву клавішу&#13;миші на цьому зображенні&#13;або натисніть ENTER для того&#13;щоб перезарядити зброю</object>
+		<!-- "level progress" text in game -->
+		<object name="levelProgress">проходження</object>
+
+		<!-- "Kill the boss!" text part on boss levels -->
+		<object name="killTheBoss">ЗнищIть головного прибульця!</object>
+
+		<!-- weapon text -->
+		<object name="Weapon">
+			<object name="cannon1">
+				<object name="name">Кулемет</object>
+			</object>
+			<object name="cannon2">
+				<object name="name">Гармата-автомат</object>
+			</object>
+			<object name="cannon3">
+				<object name="name">Гармата "Вулкан"</object>
+			</object>
+			<object name="shrapnel1">
+				<object name="name">Рушниця</object>
+			</object>
+			<object name="shrapnel2">
+				<object name="name">Здвоєна рушниця-</object>
+			</object>
+			<object name="shrapnel3">
+				<object name="name">Рушниця-молот</object>
+			</object>
+			<object name="impulse1">
+				<object name="name">Імпульсна рушниця</object>
+			</object>
+			<object name="impulse2">
+				<object name="name">Пробиваюча рушниця</object>
+			</object>
+			<object name="impulse3">
+				<object name="name">Імпульсний кулемет</object>
+			</object>
+			<object name="rocket1">
+				<object name="name">Ракета</object>
+			</object>
+			<object name="rocket2">
+				<object name="name">Самоприцільна ракета</object>
+			</object>
+			<object name="rocket3">
+				<object name="name">Ракетний комплекс</object>
+			</object>
+			<object name="plasma1">
+				<object name="name">Плазма-рушниця</object>
+			</object>
+			<object name="plasma2">
+				<object name="name">Плазма-гармата</object>
+			</object>
+			<object name="plasma3">
+				<object name="name">Плазма-кулемет</object>
+			</object>
+			<object name="shock1">
+				<object name="name">Енергетична рушниця</object>
+			</object>
+			<object name="shock2">
+				<object name="name">Енергетичний кулемет</object>
+			</object>
+			<object name="shock3">
+				<object name="name">Енергетична гармата</object>
+			</object>
+		</object>
+
+		<!-- ship text -->
+		<object name="Ship">
+			<object name="armor">
+				<object name="name">Броня</object>
+				<object name="description">Покращує броню корабля</object>
+			</object>
+			<object name="bulletSpeed">
+				<object name="name">Швидкість куль</object>
+				<object name="description">Кулі будуть летіти&#13;швидше</object>
+			</object>
+			<object name="clipSize">
+				<object name="name">Об'єм магазину</object>
+				<object name="description">Збільшує об'єм магазину</object>
+			</object>
+			<object name="damage">
+				<object name="name">Потужність зброї</object>
+				<object name="description">Збільшує пошкодження&#13;що спринює зброя </object>
+			</object>
+			<object name="experience">
+				<object name="name">Більше очків</object>
+				<object name="description">Ви будете отримувати більше&#13;очків за знищення&#13;ворогів</object>
+			</object>
+			<object name="explosion">
+				<object name="name">Самознищення</object>
+				<object name="description">Ваш корабель спертоносно&#13;вибухне коли його знищать</object>
+			</object>
+			<object name="recoil">
+				<object name="name">Охолодження</object>
+				<object name="description">Зброя буде стріляти&#13;більш влучно</object>
+			</object>
+			<object name="reload">
+				<object name="name">Перезарядка</object>
+				<object name="description">Зброя буде швидше&#13;перезаряджатися</object>
+			</object>
+			<object name="repair">
+				<object name="name">Ремонт</object>
+				<object name="description">Ваш корабель буде поступово&#13;ремонтувати свої пошкодження&#13;час від часу</object>
+			</object>
+			<object name="shipSpeed">
+				<object name="name">Швидкість корабля</object>
+				<object name="description">Ваш корабель буде літати&#13;набагато швидше</object>
+			</object>
+			<object name="shotSpeed">
+				<object name="name">Швидкість пострілів</object>
+				<object name="description">Дозволяє вашій зброї&#13;робити більше пострілів на&#13;протязі одного й того ж часу</object>
+			</object>
+		</object>
+
+		<!-- planet text -->
+		<object name="Planet">
+			<object name="aerial">
+				<object name="name">Радар</object>
+				<object name="description">Знаходить приховані бонуси</object>
+			</object>
+			<object name="airport">
+				<object name="name">Аеропорт</object>
+				<object name="description">Зменшує затримку перед наступним&#13;запуском космічного корабля</object>
+			</object>
+			<object name="mine">
+				<object name="name">Шахти</object>
+				<object name="description">Дозволяє проводити більш ефективні ремонти&#13;на планеті та трішки підвищує захист</object>
+			</object>
+			<object name="nuke">
+				<object name="name">Ракетний комплекс</object>
+				<object name="description">Час від часу запускає&#13;ядерні ракети</object>
+			</object>
+			<object name="powerPlant">
+				<object name="name">Електростанція</object>
+				<object name="description">Дозволяє проводити набагато більш&#13;ефективні ремонти на планеті</object>
+			</object>
+			<object name="redButton">
+				<object name="name">Red button</object>
+				<object name="description">Destroys all enemies on the screen&#13;in exchange of 2/3 of planet hit points</object>
+			</object>
+			<object name="ship">
+				<object name="name">Броньований крейсер</object>
+				<object name="description">Підвищує захист планети</object>
+			</object>
+			<object name="squadron">
+				<object name="name">Морський флот</object>
+				<object name="description">Підвищує захист планети</object>
+			</object>
+			<object name="starport">
+				<object name="name">Космопорт</object>
+				<object name="description">Зменшує затримку перед наступним&#13;запуском космічного корабля</object>
+			</object>
+			<object name="support1">
+				<object name="name">Обслуговування</object>
+				<object name="description">Підвищує захист планети та&#13;підвищує ефективність ремонтів&#13;на планеті</object>
+			</object>
+			<object name="support2">
+				<object name="name">Дослідження</object>
+				<object name="description">Зменшує час між покращеннями&#13;планети</object>
+			</object>
+			<object name="support3">
+				<object name="name">Відновлювання</object>
+				<object name="description">Дозволяє планеті провадити&#13;ремонти швидше</object>
+			</object>
+			<object name="support4">
+				<object name="name">Науковий інститут</object>
+				<object name="description">Підвищує швидкість розробок</object>
+			</object>
+		</object>
+
+		<!-- reminder-related text -->
+		<object name="Reminder">
+			<!-- clock is ticking text -->
+			<object name="time">&#13; УВАГА!  Це ДЕМО версiя !&#13; Залишилося часу: %.2d хвилин.&#13;&#13;</object>
+			<!-- time is out text -->
+			<object name="noTime">&#13; УВАГА!  Час гри сплинув !&#13; Залишилося часу: 00 хвилин.&#13;&#13;</object>
+			<!-- "Get NOW!" button text -->
+			<object name="getNow">Купити</object>
+			<!-- "Continue" button text -->
+			<object name="continue">Далі</object>
+			<!-- "Exit" button text -->
+			<object name="exit">ВихIд</object>
+			<!-- Demo levels is completed text -->
+			<object name="demoLevels">&#13;            УВАГА!&#13;   Ви закIнчили демо-рівнI!   &#13;&#13;</object>
+			<!-- General reminder text -->
+			<object name="main">Придбайте Clash 'N Slash I ви отримаєте:&#13;&#13;      - 70+15 Iгровi рiвнi&#13;      - 19 видiв зброi&#13;      - Бiльш нiж 50 ворогiв&#13;      - 17 унiкальних бонусiв&#13;      - Вiдсутня реклама&#13;      - Необмежений час гри&#13;</object>			
+		</object>
+
+		<!-- in-game screens -->
+		<object name="Screen">
+
+			<!-- upgrade ship screen -->
+			<object name="ShipUpgrade">
+				<!-- pick weapon hint on ship upgrade screen -->
+				<object name="pickHint">&#13;Розмір магазину: %d набоїв&#13;Частота стрільби: %d за хвилину&#13;Час перезарядки: %2.2f сек</object>
+				<!-- pick upgrade text -->
+				<object name="pickUpgradeLabel"> ВиберIть покращення:</object>
+				<!-- pick weapon text -->
+				<object name="pickWeaponLabel">ВиберIть зброю:</object>
+				<!-- parameter: armor -->
+				<object name="armor">броня</object>
+				<!-- parameter: self-repair -->
+				<object name="repair">ремонт</object>
+				<!-- parameter: damage -->
+				<object name="damage">потужність зброї</object>
+				<!-- parameter: shot speed -->
+				<object name="shotSpeed">швидкість стрільби</object>
+				<!-- parameter: accuracy -->
+				<object name="accuracy">влучність</object>
+				<!-- parameter: clip size -->
+				<object name="clipSize">розмір магазину</object>
+				<!-- parameter: reload speed -->
+				<object name="reload">перезарядка</object>
+				<!-- parameter: bullet speed -->
+				<object name="bulletSpeed">швидкість куль</object>
+
+				<!-- weapon: cannon -->
+				<object name="cannon">Автоматична зброя</object>
+				<!-- weapon: shrapnel -->
+				<object name="shrapnel">Шрапнель</object>
+				<!-- weapon: impulse -->
+				<object name="impulse">Імпульсна зброя</object>
+				<!-- weapon: rocket -->
+				<object name="rocket">Ракети</object>
+				<!-- weapon: plasma -->
+				<object name="plasma">Плазма</object>
+				<!-- weapon: shock -->
+				<object name="shock">Енергетична зброя</object>
+			</object>
+
+			<!-- upgrade planet screen -->
+			<object name="PlanetUpgrade">
+				<!-- pick upgrade text -->
+				<object name="pickUpgradeLabel">Збудувати будIвлю:</object>
+				<!-- installed upgrades text -->
+				<object name="installedUpgradesLabel"> Вже збудовано:</object>
+				<!-- "none" text in the middle of panel if there are no upgrades installed -->
+				<object name="none">нIчого</object>
+				<!-- parameter: defense -->
+				<object name="defense">захист</object>
+				<!-- parameter: regeneration -->
+				<object name="regeneration">ремонт</object>
+				<!-- parameter: ship launch speed -->
+				<object name="ship">запуск кораблів</object>
+			</object>
+
+			<!-- title screen -->
+			<object name="Title">
+				<!-- play game text -->
+				<object name="playGame">Грати </object>
+				<!-- options text -->
+				<object name="options">Налагодження </object>
+				<!-- credits text -->
+				<object name="credits">Автори </object>
+				<!-- buy now text -->
+				<object name="buyNow">Повна версIя </object>
+				<!-- exit text -->
+				<object name="exit">ВихIд </object>
+				<!-- version text -->
+				<object name="version">версія</object>
+				<!-- registered to: text -->
+				<object name="registeredTo">Ця копія належить: </object>
+				<!-- unregistered text -->
+				<object name="unregistered">НЕЗАРЕЄСТРОВАНА демо-версія</object>
+			</object>
+
+			<!-- select level screen -->
+			<object name="SelectLevel">
+				<!-- original levels text -->
+				<object name="originalLevels">Original levels</object>
+				<!-- expansion pack text -->
+				<object name="expansionPack">Expansion pack</object>
+				<!-- select level text -->
+				<object name="selectLevelText">НатиснIть на зображеннI рIвня з якого ви хочете почати гру</object>
+				<!-- go back button -->
+				<object name="goBack">&lt;Назад</object>
+			</object>
+
+			<!-- options screen -->
+			<object name="Options">
+				<!-- caption text that states "Options" -->
+				<object name="caption">Налагодження</object>
+				<!-- resolution text -->
+				<object name="resolution">ВIдеорежим:</object>
+				<!-- mode text and values -->
+				<object name="mode">На весь екран:</object>
+				<object name="modeFullscreen">Так</object>
+				<object name="modeWindowed">НI</object>
+				<!-- detail text and values -->
+				<object name="detail">ДеталI:</object>
+				<object name="detailVeryLow">Дуже низькI</object>
+				<object name="detailLow">НизькI</object>
+				<object name="detailMedium">СереднI</object>
+				<object name="detailHigh">ВисокI</object>
+				<object name="detailVeryHigh">Дуже високI</object>
+				<!-- sound volume text -->
+				<object name="soundVolume">ГучнIсть звуку:</object>
+				<!-- music volume text -->
+				<object name="musicVolume">ГучнIсть музики:</object>
+				<!-- auto pop text and values -->
+				<object name="autoPop">Авто-покращення:</object>
+				<object name="autoPopYes">Так</object>
+				<object name="autoPopNo">НI</object>
+				<!-- interface language text -->
+				<object name="language">Мова Iнтерфейсу:</object>
+				<!-- popup text about resolution change -->
+				<object name="popup">ЗмIна вIдеорежиму вступить в&#13;силу наступного разу коли&#13;ви запустите гру.</object>
+			</object>
+
+			<!-- credits screen -->
+			<object name="Credits">
+				<!-- caption text that states "Credits" -->
+				<object name="caption">Автори</object>
+				<!-- credits text -->
+				<object name="contents">
+  Ярослав Яновський:
+
+  ОригIнальна Iдея
+  Дизайн гри
+  Програмування
+  3D дизайн
+  2D зображення
+  Дизайн рIвнIв
+  ЗвуковI ефекти
+  ДокументацIя
+
+
+
+  Антон ШмIдт:
+
+  Музика
+
+     Copyright (c) 2004-2005 Ярослав Яновський
+</object>
+				<object name="contentsSmall">
+
+    Тестування:
+    Наталія Яновська   Дмитро Присакар
+    Влад Тичкин        Demon Hood
+
+    Особлива подяка Олександру Вітюку
+
+    Ця програма використовує Audiere
+    Audiere Sound System (c) 2001-2003 Chad Austin
+    (Докладніше - license/audiere.txt)
+
+    Ця програма використовує Expat
+    Expat Copyright (c) 1998, 1999, 2000
+    Thai Open Source Software Center Ltd
+    (Докладніше - license/expat.txt)
+
+    Ця програма використовує GMTL (license/gmtl.txt)
+
+    Ця програма використовує Boost (license/boost.txt)
+
+    Ця програма використовує моделі
+    з 3DCAFE.COM
+
+    Розроблено Enkord (www.enkord.com)
+		    </object>
+			</object>
+			<!-- victory screen -->
+			<object name="Victory">
+				<!-- caption text that states "Victory" -->
+				<object name="caption">Перемога!</object>
+				<!-- the end text -->
+				<object name="contents">
+  ВiтаEмо!
+
+  Всесвiт знову врятовано. По справжньому хоробра душа
+  воювала з ордами прибульцiв та перемогла. Тепер настав час
+  миру та процвiтання...
+  ...поки iнша одна небезпека не покличе нових героiв
+  до бою.
+
+  Але це вже буде iнша iсторія...</object>
+			</object>
+
+		</object>
+	</object>
+</hierarchy>
+

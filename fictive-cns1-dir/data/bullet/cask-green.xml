@@ -1,0 +1,11 @@
+<object>
+	<velocity>0.0001</velocity>
+	<acceleration>0.0</acceleration>
+	<damage>10</damage>
+	<explosionradius>220.0</explosionradius>
+	<explosionvalue>10000</explosionvalue>
+	<explosiontype>slow</explosiontype>
+	<lifetime>400</lifetime>
+	<radius>3.0</radius>
+	<detonate/>
+</object>

@@ -1,0 +1,13 @@
+<object>
+	<velocity>0.0001</velocity>
+	<damage>100000</damage>
+	<lifetime>1</lifetime>
+	<radius>0.0</radius>
+	<detonate/>
+
+	<shard>
+		<rotate>0.0</rotate>
+		<object>/object/rocket1-small1-inplace.xml</object>
+		<targeted>10.0</targeted>
+	</shard>
+</object>

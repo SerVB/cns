@@ -1,0 +1,310 @@
+<level>
+	<name>Main menu</name>
+
+	<planet/>
+	<ship/>
+
+	<effects>
+		<effect>
+			<visual>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/level/space4.jpg</texstage>
+				<mesh>/mesh/bg.xml</mesh>
+			</visual>
+			<xposition>0.0</xposition>
+			<yposition>0.0</yposition>
+			<zposition>1600.0</zposition>
+			<xscale>5.1</xscale>
+			<yscale>5.1</yscale>
+			<zscale>5.1</zscale>
+		</effect>
+
+		<!-- earth -->
+		<effect>
+			<name>planet</name>
+			<visual>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/planets/earth01.png</texstage>
+				<mesh>/mesh/centered-512x512.xml</mesh>
+			</visual>
+			<xposition>-500.0</xposition>
+			<yposition>-100.0</yposition>
+			<zposition>350.0</zposition>
+			<orbit>
+				<speed>-0.05</speed>
+				<xaxis>0.0</xaxis>
+				<yaxis>-1.0</yaxis>
+				<zaxis>0.0</zaxis>
+				<xcenter>0.0</xcenter>
+				<ycenter>0.0</ycenter>
+				<zcenter>0.0</zcenter>
+			</orbit>
+		</effect>
+
+		<!-- earth glow -->
+		<effect>
+			<visual>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/planets/blue01.png</texstage>
+				<mesh>/mesh/centered-512x512.xml</mesh>
+			</visual>
+			<xposition>-500.0</xposition>
+			<yposition>-100.0</yposition>
+			<zposition>351.0</zposition>
+			<xscale>1.4</xscale>
+			<yscale>1.4</yscale>
+			<zscale>1.4</zscale>
+			<orbit>
+				<speed>-0.05</speed>
+				<xaxis>0.0</xaxis>
+				<yaxis>-1.0</yaxis>
+				<zaxis>0.0</zaxis>
+				<xcenter>0.0</xcenter>
+				<ycenter>0.0</ycenter>
+				<zcenter>1.0</zcenter>
+			</orbit>
+		</effect>
+
+		<!-- small moon -->
+		<effect>
+			<visual>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/planets/grey01-small.png</texstage>
+				<mesh>/mesh/centered-128x128.xml</mesh>
+			</visual>
+			<xposition>-220.0</xposition>
+			<yposition>-220.0</yposition>
+			<zposition>0.0</zposition>
+			<orbit>
+				<speed>0.5</speed>
+				<xaxis>1.0</xaxis>
+				<yaxis>-1.0</yaxis>
+				<zaxis>-0.5</zaxis>
+				<xcenter>0.0</xcenter>
+				<ycenter>0.0</ycenter>
+				<zcenter>0.0</zcenter>
+			</orbit>
+			<target>planet</target>
+		</effect>
+	
+		<!-- big moon -->
+		<effect>
+			<visual>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/planets/grey01.png</texstage>
+				<mesh>/mesh/centered-512x512.xml</mesh>
+			</visual>
+			<xposition>-700.0</xposition>
+			<yposition>-200.0</yposition>
+			<zposition>650.0</zposition>
+			<orbit>
+				<speed>-0.1</speed>
+				<xaxis>0.0</xaxis>
+				<yaxis>-1.0</yaxis>
+				<zaxis>0.0</zaxis>
+				<xcenter>0.0</xcenter>
+				<ycenter>0.0</ycenter>
+				<zcenter>0.0</zcenter>
+			</orbit>
+		</effect>
+
+		<!-- sun -->
+		<effect>
+			<visual>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/planets/orange02.png</texstage>
+				<mesh>/mesh/centered-512x512.xml</mesh>
+			</visual>
+			<xposition>900.0</xposition>
+			<yposition>-450.0</yposition>
+			<zposition>1200.0</zposition>
+			<orbit>
+				<speed>0.08</speed>
+				<xaxis>0.0</xaxis>
+				<yaxis>-1.0</yaxis>
+				<zaxis>0.0</zaxis>
+				<xcenter>0.0</xcenter>
+				<ycenter>0.0</ycenter>
+				<zcenter>0.0</zcenter>
+			</orbit>
+		</effect>
+	</effects>
+
+
+	<!-- asteroid belt - outer -->
+	<schedule>
+		<object>/object/asteroid1-big1-norotate-low.xml</object>
+		<orbital/>
+		<optional/>
+		<begintime>0</begintime>
+		<endtime>1</endtime>
+		<count>20</count>
+
+		<xposition>-500.0</xposition>
+		<yposition>-500.0</yposition>
+		<zposition>1200.0</zposition>
+		<orbit>
+			<speed>0.065</speed>
+			<xaxis>0.0</xaxis>
+			<yaxis>-1.0</yaxis>
+			<zaxis>-0.5</zaxis>
+			<xcenter>0.0</xcenter>
+			<ycenter>0.0</ycenter>
+			<zcenter>0.0</zcenter>
+		</orbit>
+	</schedule>
+	<schedule>
+		<object>/object/asteroid1-small1-permanent-low.xml</object>
+		<orbital/>
+		<optional/>
+		<begintime>0</begintime>
+		<endtime>1</endtime>
+		<count>28</count>
+
+		<xposition>-500.0</xposition>
+		<yposition>-500.0</yposition>
+		<zposition>1000.0</zposition>
+		<orbit>
+			<speed>0.07</speed>
+			<xaxis>0.0</xaxis>
+			<yaxis>-1.0</yaxis>
+			<zaxis>-0.5</zaxis>
+			<xcenter>0.0</xcenter>
+			<ycenter>0.0</ycenter>
+			<zcenter>0.0</zcenter>
+		</orbit>
+	</schedule>
+
+	<schedule>
+		<object>/object/asteroid1-big1-norotate-low.xml</object>
+		<orbital/>
+		<optional/>
+		<begintime>0</begintime>
+		<endtime>1</endtime>
+		<count>20</count>
+
+		<xposition>-480.0</xposition>
+		<yposition>-480.0</yposition>
+		<zposition>1100.0</zposition>
+		<orbit>
+			<speed>0.05</speed>
+			<xaxis>0.0</xaxis>
+			<yaxis>-1.0</yaxis>
+			<zaxis>-0.5</zaxis>
+			<xcenter>0.0</xcenter>
+			<ycenter>0.0</ycenter>
+			<zcenter>0.0</zcenter>
+		</orbit>
+	</schedule>
+
+	<schedule>
+		<object>/object/asteroid1-big1-norotate-low.xml</object>
+		<orbital/>
+		<optional/>
+		<begintime>0</begintime>
+		<endtime>1</endtime>
+		<count>28</count>
+
+		<xposition>-510.0</xposition>
+		<yposition>-510.0</yposition>
+		<zposition>1100.0</zposition>
+		<orbit>
+			<speed>0.09</speed>
+			<xaxis>0.0</xaxis>
+			<yaxis>-1.0</yaxis>
+			<zaxis>-0.5</zaxis>
+			<xcenter>0.0</xcenter>
+			<ycenter>0.0</ycenter>
+			<zcenter>0.0</zcenter>
+		</orbit>
+	</schedule>
+	<schedule>
+		<object>/object/asteroid1-small1-permanent-low.xml</object>
+		<orbital/>
+		<optional/>
+		<begintime>0</begintime>
+		<endtime>1</endtime>
+		<count>28</count>
+
+		<xposition>-510.0</xposition>
+		<yposition>-510.0</yposition>
+		<zposition>1000.0</zposition>
+		<orbit>
+			<speed>0.1</speed>
+			<xaxis>0.0</xaxis>
+			<yaxis>-1.0</yaxis>
+			<zaxis>-0.5</zaxis>
+			<xcenter>0.0</xcenter>
+			<ycenter>0.0</ycenter>
+			<zcenter>0.0</zcenter>
+		</orbit>
+	</schedule>
+
+
+
+	<!-- asteroid belt - inner -->
+	<schedule>
+		<object>/object/asteroid1-big1-norotate.xml</object>
+		<orbital/>
+		<optional/>
+		<begintime>0</begintime>
+		<endtime>1</endtime>
+		<count>5</count>
+
+		<xposition>-150.0</xposition>
+		<yposition>-100.0</yposition>
+		<zposition>300.0</zposition>
+		<orbit>
+			<speed>0.13</speed>
+			<xaxis>0.0</xaxis>
+			<yaxis>-1.0</yaxis>
+			<zaxis>-0.5</zaxis>
+			<xcenter>0.0</xcenter>
+			<ycenter>0.0</ycenter>
+			<zcenter>0.0</zcenter>
+		</orbit>
+	</schedule>
+	<schedule>
+		<object>/object/asteroid1-small1-permanent.xml</object>
+		<orbital/>
+		<optional/>
+		<begintime>0</begintime>
+		<endtime>1</endtime>
+		<count>7</count>
+
+		<xposition>-150.0</xposition>
+		<yposition>-100.0</yposition>
+		<zposition>310.0</zposition>
+		<orbit>
+			<speed>0.14</speed>
+			<xaxis>0.0</xaxis>
+			<yaxis>-1.0</yaxis>
+			<zaxis>-0.5</zaxis>
+			<xcenter>0.0</xcenter>
+			<ycenter>0.0</ycenter>
+			<zcenter>0.0</zcenter>
+		</orbit>
+	</schedule>
+
+	<schedule>
+		<object>/object/asteroid1-big1-norotate.xml</object>
+		<orbital/>
+		<optional/>
+		<begintime>0</begintime>
+		<endtime>1</endtime>
+		<count>2</count>
+
+		<xposition>-150.0</xposition>
+		<yposition>-100.0</yposition>
+		<zposition>315.0</zposition>
+		<orbit>
+			<speed>0.1</speed>
+			<xaxis>0.0</xaxis>
+			<yaxis>-1.0</yaxis>
+			<zaxis>-0.5</zaxis>
+			<xcenter>0.0</xcenter>
+			<ycenter>0.0</ycenter>
+			<zcenter>0.0</zcenter>
+		</orbit>
+	</schedule>
+</level>

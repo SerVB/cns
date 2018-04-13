@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hierarchy>
+	<object name="Italiano">
+		<!-- language font files -->
+		<object name="font1">/font/font1-european.xml</object>
+		<object name="font2">/font/font2-european.xml</object>
+		
+		<!-- language native name -->
+		<object name="language">Italiano</object>
+
+		<!-- loading text on game start -->
+		<object name="loading">Caricamento... attendere...</object>
+		<!-- loading text font id (exact font name in windows) -->
+		<object name="loadingFontID">Arial</object>
+
+		<!-- "yes" text in all confirmation boxes -->
+		<object name="yes">Sì</object>
+		<!-- "no" text in all confirmation boxes -->
+		<object name="no">No</object>
+		<!-- "ok" text in all confirmation boxes -->
+		<object name="ok">OK</object>
+		<!-- "cancel" text in all confirmation boxes -->
+		<object name="cancel">Annulla</object>
+		<!-- game paused text -->
+		<object name="gamePaused">PAUSA</object>
+		<!-- quit confirmation text -->
+		<object name="quitConfirmationText">Vuoi uscire adesso?</object>
+		<!-- skip bonus level text -->
+		<object name="skipBonusLevelText">Vuoi saltare questo livello&#13; bonus?</object>
+		<!-- hint that describes purpose of ship level up -->
+		<object name="hintIntroduction">&lt;---&#13;&#13; Quei due indicatori gialli e rossi a sinistra indicano il danno che&#13; il pianeta o la navicella possono sopportare prima di essere distrutti. &#13;&#13; Se la navicella viene distrutta si rigenera dopo&#13; alcuni secondi, ma se gli invasori alieni conquisteranno&#13; il pianeta il gioco termina.&#13;&#13;&lt;---</object>
+		<!-- hint that describes purpose of colored casks -->
+		<object name="hintCask">&lt;--- Spara ai barili colorati per scatenare&#13; la distruzione sui tuoi nemici</object>
+		<!-- hint that describes cask chain effects -->
+		<object name="hintChain">&lt;--- Alcuni barili possono scatenare&#13; un effetto a catena&#13; Prova a sparare a questo barile</object>
+		
+		<!-- hint that describes purpose of ship level up -->
+		<object name="hintShipLevelUp">&#13;&lt;--- POTENZIA LA NAVICELLA!&#13;&#13; L'icona del mouse indica che puoi potenziare&#13; la navicella premendo il tasto destro&#13; del mouse in qualunque momento.&#13;&#13; Una sottile linea azzurra a destra dell'indicatore di difesa&#13; della navicella indica quanti punti bisogna totalizzare per &#13; ottenere un'altra possibilità di potenziare la navicella.&#13;&#13; Premi ora il tasto destro del mouse per scegliere &#13;nuove armi.&#13;</object>
+		<!-- hint that describes purpose of planet level up -->
+		<object name="hintPlanetLevelUp">&#13;&lt;--- POTENZIA IL PIANETA!&#13;&#13; L'icona del mouse indica&#13; che puoi potenziare il pianeta premendo il tasto destro&#13; del mouse in qualunque momento.&#13;&#13; Una sottile linea verde a destra dell'indicatore di difesa&#13; del pianeta indica il tempo residuo per ottenere un altro&#13; potenziamento del pianeta.&#13;</object>
+		<!-- hint that describes automatical shhoting abilities of weapon -->
+		<object name="hintAutoWeapon">&lt;--- NUOVE ARMI DISPONIBILI!&#13;&#13; Tutte le armi possono sparare senza interruzione.&#13; Tieni premuto il pulsante sinistro del mouse&#13; per sparare a raffica.</object>
+
+		<!-- game results that displayed after every level -->
+		<object name="gameResults">        %s&#13;&#13;nemici distrutti: %d&#13;colpi sparati: %d&#13;bonus acquisiti: %d&#13;tempo: %d:%02d&#13;punteggio: %d</object>
+
+		<!-- "Bonus level ticket acquired" text -->
+		<object name="bonusTicket">  Acquisito un livello&#13; bonus </object>
+
+		<!-- "Planet rescued" text in level complete screen -->
+		<object name="levelComplete">PIANETA SALVATO</object>
+		<!-- "Play Next" text in level complete screen -->
+		<object name="playNext">Pianeta successivo </object>
+		<!-- "Restart" text in level complete screen -->
+		<object name="restart">Ripeti livello</object>
+
+		<!-- "Game over" text in game over screen -->
+		<object name="gameOver">   FINE DEL GIOCO </object>
+		<!-- "Play again" text in game over screen -->
+		<object name="playAgain">Nuova partita</object>
+		<!-- "Exit" text in game over screen -->
+		<object name="exit">Esci</object>
+
+		<!-- nag screen text -->
+		<object name="nagScreenText"> Ordina Clash 'N Slash *SUBITO*&#13; e riceverai:&#13;&#13; - 60+13 emozionanti livelli di gioco&#13; - 19 potenti armi&#13; - Oltre 50 tipi di nemici&#13; - 17 possibilità di potenziamento uniche&#13; - Nessun “nag screen”&#13; - Tempo di gioco illimitato&#13; - Assistenza via e-mail</object>
+		<!-- Buy NOW button -->
+		<object name="buyNow">Ordina SUBITO!</object>
+
+		<!-- "Level" text in game -->
+		<object name="level">LIVELLO</object>
+		<!-- "Bonus level" text in game -->
+		<object name="bonusLevel">   LIVELLO BONUS&#13; premi esc per saltarlo </object>
+   	<!-- "press right mouse button" text in game -->
+		<object name="pressRMB">Premi il tasto destro&#13;del mouse</object>
+		<!-- "right click to reload" text in game -->
+		<object name="reload">Fai clic su questa icona con il tasto destro&#13;del mouse &#13;o premi INVIO per&#13;ricaricare le armi</object>
+		<!-- "level progress" text in game -->
+		<object name="levelProgress">progr livello</object>
+
+		<!-- "Kill the boss!" text part on boss levels -->
+		<object name="killTheBoss">Uccidi il boss!</object>
+
+		<!-- weapon text -->
+		<object name="Weapon">
+			<object name="cannon1">
+				<object name="name">Cannone super rapido</object>
+			</object>
+			<object name="cannon2">
+				<object name="name">Mitragliatrice</object>
+			</object>
+			<object name="cannon3">
+				<object name="name">Cannone vulcan</object>
+			</object>
+			<object name="shrapnel1">
+				<object name="name">Shotgun</object>
+			</object>
+			<object name="shrapnel2">
+				<object name="name">Cannone con proiettili a frammentazione</object>
+			</object>
+			<object name="shrapnel3">
+				<object name="name">Martello pneumatico</object>
+			</object>
+			<object name="impulse1">
+				<object name="name">Arma ad impulsi</object>
+			</object>
+			<object name="impulse2">
+				<object name="name">Cleave rifle</object>
+			</object>
+			<object name="impulse3">
+				<object name="name">Minicannone a impulsi</object>
+			</object>
+			<object name="rocket1">
+				<object name="name">Lanciarazzi</object>
+			</object>
+			<object name="rocket2">
+				<object name="name">Lanciamissili</object>
+			</object>
+			<object name="rocket3">
+				<object name="name">Batteria di missili</object>
+			</object>
+			<object name="plasma1">
+				<object name="name">Cannone al plasma</object>
+			</object>
+			<object name="plasma2">
+				<object name="name">Mortaio al plasma</object>
+			</object>
+			<object name="plasma3">
+				<object name="name">Autocannone al plasma</object>
+			</object>
+			<object name="shock1">
+				<object name="name">Shock rifle</object>
+			</object>
+			<object name="shock2">
+				<object name="name">Shock machinegun</object>
+			</object>
+			<object name="shock3">
+				<object name="name">Shock cannon</object>
+			</object>
+		</object>
+
+		<!-- ship text -->
+		<object name="Ship">
+			<object name="armor">
+				<object name="name">Scudo</object>
+				<object name="description">Migliora la protezione &#13;della navicella</object>
+			</object>
+			<object name="bulletSpeed">
+				<object name="name">Velocità proiettili</object>
+				<object name="description">I proiettili si sposteranno&#13;più rapidamente </object>
+			</object>
+			<object name="clipSize">
+				<object name="name">Dimensioni caricatore</object>
+				<object name="description">Aumenta le dimensioni del caricatore</object>
+			</object>
+			<object name="damage">
+				<object name="name">danno</object>
+				<object name="description">Aumenta la capacità di danno delle armi</object>
+			</object>
+			<object name="experience">
+				<object name="name">Aumenta punti</object>
+				<object name="description">Consente di totalizzare più&#13;punti per l'uccisione&#13;dei nemici.</object>
+			</object>
+			<object name="explosion">
+				<object name="name">Autodistruzione</object>
+				<object name="description">La navicella esploderà con&#13; un'azione distruttiva maggiore se colpita</object>
+			</object>
+			<object name="recoil">
+				<object name="name">Rinculo</object>
+				<object name="description">Le armi spareranno con una&#13; precisione maggiore</object>
+			</object>
+			<object name="reload">
+				<object name="name">Ricarica</object>
+				<object name="description">Le armi verranno ricaricate&#13;più rapidamente </object>
+			</object>
+			<object name="repair">
+				<object name="name">Autoriparazione</object>
+				<object name="description">La navicella recupera alcuni&#13;punti di energia nel tempo</object>
+			</object>
+			<object name="shipSpeed">
+				<object name="name">Velocità navicella</object>
+				<object name="description">La navicella si sposterà più&#13;rapidamente</object>
+			</object>
+			<object name="shotSpeed">
+				<object name="name">Velocità colpi</object>
+				<object name="description">Consente alle armi di&#13;sparare una raffica con un numero maggiore di proiettili&#13;al minuto</object>
+			</object>
+		</object>
+
+		<!-- planet text -->
+		<object name="Planet">
+			<object name="aerial">
+				<object name="name">Postazioni radar</object>
+				<object name="description">Rileva i power-up nascosti</object>
+			</object>
+			<object name="airport">
+				<object name="name">Aeroporto</object>
+				<object name="description">Diminuisce il tempo di recupero della navicella spaziale</object>
+			</object>
+			<object name="mine">
+				<object name="name">Miniere</object>
+				<object name="description">Consentono al pianeta di autoripararsi&#13;più rapidamente dopo essere stato danneggiato&#13;e aumentano leggermente la difesa</object>
+			</object>
+			<object name="nuke">
+				<object name="name">Nucleare</object>
+				<object name="description">Lancia razzi nucleari&#13;ogni tanto</object>
+			</object>
+			<object name="powerPlant">
+				<object name="name">Centrale idroelett.</object>
+				<object name="description">Consente al pianeta di autoripararsi&#13;più rapidamente dopo essere stato danneggiato</object>
+			</object>
+			<object name="redButton">
+				<object name="name">Pulsante rosso</object>
+				<object name="description">Distrugge tutti i nemici sulla schermata &#13;in cambio di 2/3 di energia del pianeta</object>
+			</object>
+			<object name="ship">
+				<object name="name">Incrociatore coraz.</object>
+				<object name="description">Aumenta la difesa del pianeta</object>
+			</object>
+			<object name="squadron">
+				<object name="name">Squadrone spaziale</object>
+				<object name="description">Aumenta la difesa del pianeta</object>
+			</object>
+			<object name="starport">
+				<object name="name">Porto celeste</object>
+				<object name="description">Aumenta il recupero della navicella spaziale distrutta&#13;</object>
+			</object>
+			<object name="support1">
+				<object name="name">Strutture di supporto</object>
+				<object name="description">Aumentano la difesa del pianeta&#13;e consentono al pianeta di autoripararsi&#13;più rapidamente dopo essere stato danneggiato</object>
+			</object>
+			<object name="support2">
+				<object name="name">Stabilim. di ricerca</object>
+				<object name="description">Riducono il lasso di tempo che intercorre tra i vari potenziamenti&#13;del pianeta</object>
+			</object>
+			<object name="support3">
+				<object name="name">Stabilimenti di recupero</object>
+				<object name="description">Consente al pianeta di autoripararsi&#13;più rapidamente dopo essere stato danneggiato</object>
+			</object>
+			<object name="support4">
+				<object name="name">Istituzioni scientifiche</object>
+				<object name="description">Migliorano la ricerca</object>
+			</object>
+		</object>
+
+		<!-- reminder-related text -->
+		<object name="Reminder">
+			<!-- clock is ticking text -->
+			<object name="time">&#13; ATTENZTIONE! Questa è una versione DEMO!&#13; Tempo residuo: %.2d minuti.&#13;</object>
+			<!-- time is out text -->
+			<object name="noTime">&#13; ATTENZTIONE! Tempo della Demo è scaduto!&#13; Tempo residuo: 00 minuti.&#13;</object>
+			<!-- "Get NOW!" button text -->
+			<object name="getNow">Compra</object>
+			<!-- "Continue" button text -->
+			<object name="continue">Continua</object>
+			<!-- "Exit" button text -->
+			<object name="exit">Esci</object>
+			<!-- Demo levels is completed text -->
+			<object name="demoLevels">&#13;  ATTENZTIONE!&#13; I livelli demo sono stati completati!&#13; </object>
+			<!-- General reminder text -->
+			<object name="main">Ordina Clash 'N Slash *SUBITO* e riceverai:&#13;&#13; - 60+13 emozionanti livelli di gioco&#13; - 19 potenti armi&#13; - Oltre 50 tipi di nemici&#13; - 17 possibilità di potenziamento uniche&#13; - Nessun “nag screen”&#13; - Tempo di gioco illimitato&#13;</object>			
+		</object>
+
+		<!-- in-game screens -->
+		<object name="Screen">
+
+			<!-- upgrade ship screen -->
+			<object name="ShipUpgrade">
+				<!-- pick weapon hint on ship upgrade screen -->
+				<object name="pickHint">&#13;Dimensioni caricatore: %d proiettili&#13;Velocità spari: %d giri/min.&#13;Tempo di ricarica: %2.2f sec</object>
+				<!-- pick upgrade text -->
+				<object name="pickUpgradeLabel">Scegli il potenziamento:</object>
+				<!-- pick weapon text -->
+				<object name="pickWeaponLabel">Scegli l'arma:</object>
+				<!-- parameter: armor -->
+				<object name="armor">scudo</object>
+				<!-- parameter: self-repair -->
+				<object name="repair">autoriparazione</object>
+				<!-- parameter: damage -->
+				<object name="damage">danno</object>
+				<!-- parameter: shot speed -->
+				<object name="shotSpeed">velocità colpi</object>
+				<!-- parameter: accuracy -->
+				<object name="accuracy">precisione</object>
+				<!-- parameter: clip size -->
+				<object name="clipSize">dimensioni caricatore</object>
+				<!-- parameter: reload speed -->
+				<object name="reload">ricarica</object>
+				<!-- parameter: bullet speed -->
+				<object name="bulletSpeed">velocità proiettili</object>
+
+				<!-- weapon: cannon -->
+				<object name="cannon">Cannone</object>
+				<!-- weapon: shrapnel -->
+				<object name="shrapnel">Shrapnel</object>
+				<!-- weapon: impulse -->
+				<object name="impulse">Impulsi</object>
+				<!-- weapon: rocket -->
+				<object name="rocket">Razzo</object>
+				<!-- weapon: plasma -->
+				<object name="plasma">Plasma</object>
+				<!-- weapon: shock -->
+				<object name="shock">Scarica</object>
+			</object>
+
+			<!-- upgrade planet screen -->
+			<object name="PlanetUpgrade">
+				<!-- pick upgrade text -->
+				<object name="pickUpgradeLabel">Scegli il potenziamento:</object>
+				<!-- installed upgrades text -->
+				<object name="installedUpgradesLabel">Potenziamenti effettuati:</object>
+				<!-- "none" text in the middle of panel if there are no upgrades installed -->
+				<object name="none">nessuno</object>
+				<!-- parameter: defense -->
+				<object name="defense">difesa</object>
+				<!-- parameter: regeneration -->
+				<object name="regeneration">autoriparazione</object>
+				<!-- parameter: ship launch speed -->
+				<object name="ship">vel. lancio navicella</object>
+			</object>
+
+			<!-- title screen -->
+			<object name="Title">
+				<!-- play game text -->
+				<object name="playGame">Gioca </object>
+				<!-- options text -->
+				<object name="options">Opzioni </object>
+				<!-- credits text -->
+				<object name="credits">Riconoscimenti </object>
+				<!-- buy now text -->
+				<object name="buyNow">Ordina vers. INTERA </object>
+				<!-- exit text -->
+				<object name="exit">Esci </object>
+				<!-- version text -->
+				<object name="version">versione</object>
+				<!-- registered to: text -->
+				<object name="registeredTo">Di: </object>
+				<!-- unregistered text -->
+				<object name="unregistered">Versione DEMO non registrata</object>
+			</object>
+
+			<!-- select level screen -->
+			<object name="SelectLevel">
+				<!-- original levels text -->
+				<object name="originalLevels">Livelli originali</object>
+				<!-- expansion pack text -->
+				<object name="expansionPack">Espansione</object>
+				<!-- select level text -->
+				<object name="selectLevelText">Fai clic sull'immagine del livello da cui vuoi cominciare</object>
+				<!-- go back button -->
+				<object name="goBack">&lt;Indietro</object>
+			</object>
+
+			<!-- options screen -->
+			<object name="Options">
+				<!-- caption text that states "Options" -->
+				<object name="caption">Opzioni</object>
+				<!-- resolution text -->
+				<object name="resolution">Risoluzione:</object>
+				<!-- mode text and values -->
+				<object name="mode">Modalità video:</object>
+				<object name="modeFullscreen">Schermo intero</object>
+				<object name="modeWindowed">Finestra</object>
+				<!-- detail text and values -->
+				<object name="detail">Dettagli:</object>
+				<object name="detailVeryLow">Bassissima</object>
+				<object name="detailLow">Bassa</object>
+				<object name="detailMedium">Media</object>
+				<object name="detailHigh">Alta</object>
+				<object name="detailVeryHigh">Altissima</object>
+				<!-- sound volume text -->
+				<object name="soundVolume">Volume sonoro:</object>
+				<!-- music volume text -->
+				<object name="musicVolume">Volume musica:</object>
+				<!-- auto pop text and values -->
+				<object name="autoPop">Auto-pop per aggiornam.:</object>
+				<object name="autoPopYes">Sì</object>
+				<object name="autoPopNo">No</object>
+				<!-- interface language text -->
+				<object name="language">Lingua interfaccia:</object>
+				<!-- popup text about resolution change -->
+				<object name="popup">Le modifiche alle modalità di risoluzione e video&#13;avranno effetto dal prossimo riavvio del gioco.</object>
+			</object>
+
+			<!-- credits screen -->
+			<object name="Credits">
+				<!-- caption text that states "Credits" -->
+				<object name="caption">Riconoscimenti</object>
+				<!-- credits text -->
+				<object name="contents">
+
+  Idea originale
+  Design gioco
+  Programmazione
+  3D Design
+  2D Art
+  Level design
+  Effetti sonori
+  Manuale
+        a cura di
+
+  Yaroslav Yanovsky
+
+
+  Musica 
+  di 
+  Anton Shmidt
+
+  Copyright (c) 2004-2005 
+  di Yaroslav Yanovsky
+
+
+</object>
+				<object name="contentsSmall">
+
+    Test:
+    Nataly Yanovska    Dmitriy Prisakar
+    Vlad Tychkin       Demon Hood
+
+    Ringraziamenti speciali ad Alexander Vityk
+
+    Questo programma utilizza Audiere
+    Audiere Sound System (c) 2001-2003 Chad Austin
+    (vedi license/audiere.txt)
+
+    Questo programma utilizza Expat Expat
+    Expat Copyright (c) 1998, 1999, 2000
+    Thai Open Source Software Center Ltd
+    (vedi license/expat.txt)
+
+    Questo programma utilizza GMTL (vedi license/gmtl.txt)
+
+    Questo programma utilizza Boost (vedi license/boost.txt)
+
+    Questo programma utilizza alcuni modelli
+    concessi da 3DCAFE.COM
+
+    Sviluppato da Enkord (www.enkord.com)
+
+
+
+</object>
+			</object>
+			<!-- victory screen -->
+			<object name="Victory">
+				<!-- caption text that states "Victory" -->
+				<object name="caption">Vittoria!</object>
+				<!-- the end text -->
+				<object name="contents">
+  Congratulazioni! L'universo è salvo ancora una
+  volta! Un eroe ha combattuto contro gli alieni
+  sconfiggendoli. Adesso regneranno pace e
+  prosperità...
+  
+  ...fino a quando una nuova minaccia richiederà
+  l'intervento di nuovi eroi. Ma questa è
+  un'altra storia...</object>
+			</object>
+
+		</object>
+	</object>
+</hierarchy>
+
+

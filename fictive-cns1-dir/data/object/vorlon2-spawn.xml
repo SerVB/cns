@@ -1,0 +1,20 @@
+<object>
+	<!-- dummy object that spawns 2 vorlon spawns immediately -->
+	<velocity>15.0</velocity>
+	<damage>1</damage>
+	<lifetime>1</lifetime>
+	<radius>0.0001</radius>
+	<score>0</score>
+	<detonate/>
+
+	<shard>
+		<rotate>1.0</rotate>
+		<object>/object/vorlon2-small1-spawn.xml</object>
+		<targeted>10.0</targeted>
+	</shard>
+	<shard>
+		<rotate>-1.0</rotate>
+		<object>/object/vorlon2-small1-spawn.xml</object>
+		<targeted>10.0</targeted>
+	</shard>
+</object>

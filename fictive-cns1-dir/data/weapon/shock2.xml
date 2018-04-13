@@ -1,0 +1,32 @@
+<weapon>
+	<name>$Language.Default.Weapon.shock2.name</name>
+	<clipsize>25</clipsize>
+	<cooldown>215</cooldown>
+	<reload>2000</reload>
+	<recoil>11.0</recoil>
+	<recover>50.0</recover>
+	<type>shock</type>
+	<icon>/texture/gui/ship/icons/shock2.jpg</icon>
+	<sound>/sound/shotshock.wav</sound>
+
+	<bullets>
+		<bullet>
+			<rotate>0.0</rotate>
+			<source>/bullet/shock-small-weak.xml</source>
+		</bullet>
+	</bullets>
+
+	<effects>
+		<effect>
+			<visual>
+				<mesh>/mesh/centered-64x64.xml</mesh>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/shot-flash1.png</texstage>				
+			</visual>
+
+			<velocity>0.0</velocity>
+			<lifetime>70</lifetime>
+			<count>1</count>
+		</effect>
+	</effects>
+</weapon>

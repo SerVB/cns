@@ -1,0 +1,49 @@
+<object>
+	<velocity>400.0</velocity>
+	<damage>5</damage>
+	<lifetime>2000</lifetime>
+	<radius>3.0</radius>
+
+	<visual>
+		<mesh>/mesh/centered-32x32.xml</mesh>
+		<material>/material/tex-ac.xml</material>
+		<texstage>/texture/plasma1.png</texstage>
+	</visual>
+
+	<trail>
+		<mesh>/mesh/trail3.xml</mesh>
+		<material>/material/diff-ac.xml</material>
+	</trail>
+
+	<effects>
+		<effect>
+			<sound>
+				<stream>/sound/hitplasma.wav</stream>
+			</sound>
+			<lifetime>100</lifetime>
+			<count>1</count>
+		</effect>
+		<effect>
+			<visual>
+				<mesh>/mesh/centered-16x16.xml</mesh>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/dot-yellow2.png</texstage>
+			</visual>
+			<optional/>
+			<velocity>100.0</velocity>
+			<lifetime>1000</lifetime>
+			<count>10</count>
+		</effect>
+		<effect>
+			<visual>
+				<mesh>/mesh/centered-64x64.xml</mesh>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/shot-flash1.png</texstage>
+			</visual>
+			<optional/>
+			<velocity>0.0</velocity>
+			<lifetime>70</lifetime>
+			<count>1</count>
+		</effect>
+	</effects>
+</object>

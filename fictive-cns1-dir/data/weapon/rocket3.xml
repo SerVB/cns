@@ -1,0 +1,44 @@
+<weapon>
+	<name>$Language.Default.Weapon.rocket3.name</name>
+	<clipsize>8</clipsize>
+	<cooldown>650</cooldown>
+	<reload>3800</reload>
+	<guidedarea>150.0</guidedarea>
+	<guidedacceleration>400.0</guidedacceleration>
+	<type>rocket</type>
+	<icon>/texture/gui/ship/icons/rocket3.jpg</icon>
+	<sound>/sound/shotrocket.wav</sound>
+
+	<bullets>
+		<bullet>
+			<rotate>0.0</rotate>
+			<source>/bullet/rocket3.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>-1.57</rotate>
+			<source>/bullet/rocket3.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>1.57</rotate>
+			<source>/bullet/rocket3.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>3.14</rotate>
+			<source>/bullet/rocket3.xml</source>
+		</bullet>
+	</bullets>
+
+	<effects>
+		<effect>
+			<visual>
+				<mesh>/mesh/centered-64x64.xml</mesh>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/shot-flash1.png</texstage>				
+			</visual>
+
+			<velocity>0.0</velocity>
+			<lifetime>70</lifetime>
+			<count>1</count>
+		</effect>
+	</effects>
+</weapon>

@@ -1,0 +1,21 @@
+<mesh primitive="trianglestrip">
+	<format>
+		<coordinates/>
+		<colors count="1"/>
+		<textures count="1"/>
+	</format>
+
+	<vertices>
+		<vertex x="-16.0" y="-16.0" z="0.0" color="0xFFFEFE50" u="0.0" v="0.0"/>
+		<vertex x="16.0" y="-16.0" z="0.0" color="0xFFFEFE50" u="1.0" v="0.0"/>
+		<vertex x="-16.0" y="16.0" z="0.0" color="0xFFFEFE50" u="0.0" v="1.0"/>
+		<vertex x="16.0" y="16.0" z="0.0" color="0xFFFEFE50" u="1.0" v="1.0"/>
+	</vertices>
+
+	<indices>
+		<index value="0"/>
+		<index value="1"/>
+		<index value="2"/>
+		<index value="3"/>
+	</indices>
+</mesh>

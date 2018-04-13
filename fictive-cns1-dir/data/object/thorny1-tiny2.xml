@@ -1,0 +1,40 @@
+<object>
+	<velocity>30.0</velocity>
+	<damage>10</damage>
+	<lifetime>3000</lifetime>
+	<radius>10.0</radius>
+	<score>0</score>
+
+	<visual>
+		<mesh>/mesh/centered-32x32.xml</mesh>
+		<material>/material/tex-ac_diff-a.xml</material>
+		<texstage>/texture/ship/thorny1-tiny1.png</texstage>
+	</visual>
+	<blend>
+		<timebegin>2000</timebegin>
+		<timeend>3000</timeend>
+		<valuebegin>255</valuebegin>
+		<valueend>0</valueend>
+	</blend>
+
+	<effects>
+		<effect>
+			<sound>
+				<stream>/sound/playerhit.wav</stream>
+			</sound>
+			<lifetime>500</lifetime>
+			<count>1</count>
+		</effect>
+		<effect>
+			<visual>
+				<mesh>/mesh/centered-12x12.xml</mesh>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/dot-blue1.png</texstage>
+			</visual>
+			<optional/>
+			<velocity>100.0</velocity>
+			<lifetime>500</lifetime>
+			<count>4</count>
+		</effect>
+	</effects>
+</object>

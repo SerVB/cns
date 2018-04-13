@@ -1,0 +1,13 @@
+<object>
+	<velocity>20.0</velocity>
+	<damage>10</damage>
+	<lifetime>0</lifetime>
+	<radius>0.0</radius>
+	<score>0</score>
+
+	<visual>
+		<mesh>/mesh/centered-32x32.xml</mesh>
+		<material>/material/tex-ac.xml</material>
+		<texstage>/texture/object/asteroid1-tiny.png</texstage>
+	</visual>
+</object>

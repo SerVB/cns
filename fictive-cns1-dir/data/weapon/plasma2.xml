@@ -1,0 +1,64 @@
+<weapon>
+	<name>$Language.Default.Weapon.plasma2.name</name>
+	<clipsize>10</clipsize>
+	<cooldown>620</cooldown>
+	<reload>2200</reload>
+	<recoil>10.0</recoil>
+	<recover>20.0</recover>
+	<type>plasma</type>
+	<icon>/texture/gui/ship/icons/plasma2.jpg</icon>
+	<sound>/sound/shotplasma.wav</sound>
+
+	<bullets>
+		<bullet>
+			<rotate>0.0</rotate>
+			<source>/bullet/plasma2.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>-0.1</rotate>
+			<source>/bullet/plasma2.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>0.1</rotate>
+			<source>/bullet/plasma2.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>-0.2</rotate>
+			<source>/bullet/plasma1.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>0.2</rotate>
+			<source>/bullet/plasma1.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>-0.05</rotate>
+			<source>/bullet/plasma2-slow.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>0.05</rotate>
+			<source>/bullet/plasma2-slow.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>-0.15</rotate>
+			<source>/bullet/plasma2-slow.xml</source>
+		</bullet>
+		<bullet>
+			<rotate>0.15</rotate>
+			<source>/bullet/plasma2-slow.xml</source>
+		</bullet>
+	</bullets>
+
+	<effects>
+		<effect>
+			<visual>
+				<mesh>/mesh/centered-64x64.xml</mesh>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/shot-flash1.png</texstage>				
+			</visual>
+
+			<velocity>0.0</velocity>
+			<lifetime>70</lifetime>
+			<count>1</count>
+		</effect>
+	</effects>
+</weapon>

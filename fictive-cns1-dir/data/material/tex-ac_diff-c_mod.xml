@@ -1,0 +1,3 @@
+<material>
+	<pixelshader source="/shader/tex-ac_diff-c_mod.xml"/>
+</material>

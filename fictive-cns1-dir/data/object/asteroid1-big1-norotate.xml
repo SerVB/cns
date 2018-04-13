@@ -1,0 +1,57 @@
+<object>
+	<velocity>20.0</velocity>
+	<damage>20</damage>
+	<lifetime>0</lifetime>
+	<radius>25.0</radius>
+	<score>100</score>
+
+	<visual>
+		<mesh>/mesh/centered-64x64.xml</mesh>
+		<material>/material/tex-ac.xml</material>
+		<texstage>/texture/object/asteroid1-big/frame%04d.png</texstage>
+		<animationbegin>0</animationbegin>
+		<animationend>29</animationend>
+		<animationfps>20</animationfps>
+		<animationrandom/>
+	</visual>
+
+	<shard>
+		<offset>10.0</offset>
+		<rotate>-1.04717</rotate>
+		<bullet>/object/asteroid1-small1.xml</bullet>
+		<norotate/>
+	</shard>
+	<shard>
+		<offset>10.0</offset>
+		<rotate>1.04717</rotate>
+		<bullet>/object/asteroid1-small1.xml</bullet>
+		<norotate/>
+	</shard>
+	<shard>
+		<offset>10.0</offset>
+		<rotate>3.1415</rotate>
+		<bullet>/object/asteroid1-small1.xml</bullet>
+		<norotate/>
+	</shard>
+
+	<effects>
+		<effect>
+			<sound>
+				<stream>/sound/playerhit.wav</stream>
+			</sound>
+			<lifetime>500</lifetime>
+			<count>1</count>
+		</effect>
+		<effect>
+			<visual>
+				<mesh>/mesh/centered-16x16.xml</mesh>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/object/asteroid1-tiny.png</texstage>				
+			</visual>
+			<optional/>
+			<velocity>130.0</velocity>
+			<lifetime>3000</lifetime>
+			<count>10</count>
+		</effect>
+	</effects>
+</object>

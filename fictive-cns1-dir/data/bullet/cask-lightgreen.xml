@@ -1,0 +1,63 @@
+<object>
+	<velocity>300.0</velocity>
+	<damage>1</damage>
+	<lifetime>700</lifetime>
+	<radius>3.0</radius>
+	<explosionradius>60.0</explosionradius>
+	<explosionvalue>10</explosionvalue>
+	<detonate/>
+
+	<visual>
+		<mesh>/mesh/centered-64x64.xml</mesh>
+		<material>/material/tex-ac.xml</material>
+		<texstage>/texture/plasma-explosive.png</texstage>
+	</visual>
+
+	<trail>
+		<mesh>/mesh/trail3.xml</mesh>
+		<material>/material/diff-ac.xml</material>
+	</trail>
+
+	<effects>
+		<effect>
+			<visual>
+				<mesh>/mesh/centered-256x256.xml</mesh>
+				<material>/material/tex-ac_diff-a.xml</material>
+				<texstage>/texture/blastwave-green.png</texstage>
+			</visual>
+			<sound>
+				<stream>/sound/hitplasma.wav</stream>
+			</sound>
+			<velocity>0.0</velocity>
+			<lifetime>400</lifetime>
+			<count>1</count>
+			<blend>
+				<timebegin>0</timebegin>
+				<timeend>400</timeend>
+				<valuebegin>200</valuebegin>
+				<valueend>0</valueend>
+			</blend>
+			<zoom>
+				<timebegin>0</timebegin>
+				<timeend>400</timeend>
+				<xbegin>0.0</xbegin>
+				<ybegin>0.0</ybegin>
+				<zbegin>0.0</zbegin>
+				<xend>1.2</xend>
+				<yend>1.2</yend>
+				<zend>1.2</zend>
+			</zoom>
+		</effect>
+		<effect>
+			<visual>
+				<mesh>/mesh/centered-16x16.xml</mesh>
+				<material>/material/tex-ac.xml</material>
+				<texstage>/texture/dot-green1.png</texstage>
+			</visual>
+
+			<velocity>200.0</velocity>
+			<lifetime>700</lifetime>
+			<count>7</count>
+		</effect>
+	</effects>
+</object>
