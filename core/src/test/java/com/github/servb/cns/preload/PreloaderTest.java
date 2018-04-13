@@ -16,19 +16,62 @@
 package com.github.servb.cns.preload;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.files.FileHandle;
 import com.github.servb.cns.test.GameTest;
 import java.io.FileNotFoundException;
+import java.util.HashSet;
 import static org.junit.Assert.fail;
 import org.junit.Test;
 
 public class PreloaderTest extends GameTest {
 
+    public static final String CNS1_FICTIVE_DIR = "Dropbox/CNS/cns/fictive-cns1-dir/";
+
     @Test
     public void testConstructor() {
-        final String fictiveDir = "Dropbox/CNS/cns/fictive-cns1-dir/";
         try {
-            Preloader.load(Gdx.files.external(fictiveDir));
+            Preloader.load(Gdx.files.external(CNS1_FICTIVE_DIR));
+            Gdx.app.log("Test Constructor", "OK");
         } catch (final FileNotFoundException ex) {
+            Gdx.app.log("ex", "->", ex);
+            fail("Exception is thrown...");
+        }
+    }
+
+    @Test
+    public void testFictiveDir() { // Search for all <tag>/link/to/file</tag>
+        try {
+            final FileHandle dataDir = Gdx.files.external(CNS1_FICTIVE_DIR).child("data/");
+            final HashSet<FileHandle> doneFiles = new HashSet<>();
+            final HashSet<FileHandle> files = new HashSet<>();
+
+            for (final FileHandle level : dataDir.child("level/").list()) {
+                files.add(level);
+            }
+
+            while (!files.isEmpty()) {
+                final FileHandle next = files.iterator().next();
+                files.remove(next);
+                doneFiles.add(next);
+
+                if ("xml".equals(next.extension())) { // If file can have links inside
+                    final String readString = next.readString("utf-8");
+                    int nowPos = 0;
+                    while (readString.indexOf(">/", nowPos) != -1) {
+                        final int startPos = readString.indexOf(">/", nowPos) + 1;
+                        final int endPos = readString.indexOf("<", startPos);
+                        nowPos = endPos;
+                        final String newPath = readString.substring(startPos, endPos).replace("%04d", "0000");
+                        final FileHandle child = dataDir.child(newPath);
+                        if (!doneFiles.contains(child)) {
+                            files.add(child);
+                        }
+                    }
+                }
+            }
+
+            Gdx.app.log("Test Fictive Dir", "OK, found " + doneFiles.size() + " files");
+        } catch (final Exception ex) {
             Gdx.app.log("ex", "->", ex);
             fail("Exception is thrown...");
         }
