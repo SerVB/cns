@@ -61,7 +61,7 @@ public final class MeshFile {
                 final double x = Double.parseDouble(vertex.getAttribute("x"));
                 final double y = Double.parseDouble(vertex.getAttribute("y"));
                 final double z = Double.parseDouble(vertex.getAttribute("z"));
-                final int color = Integer.parseInt(vertex.getAttribute("color").substring(2), 16);
+                final long color = Long.parseLong(vertex.getAttribute("color").substring(2), 16);
                 final double u = Double.parseDouble(vertex.getAttribute("u"));
                 final double v = Double.parseDouble(vertex.getAttribute("v"));
 
@@ -88,11 +88,11 @@ public final class MeshFile {
 
     public static final class Vertex {
         public final double x, y, z;
-        public final int color;
+        public final long color;
         public final double u, v;
 
         public Vertex(final double x, final double y, final double z,
-                final int color,
+                final long color,
                 final double u, final double v) {
             this.x = x;
             this.y = y;
@@ -100,6 +100,58 @@ public final class MeshFile {
             this.color = color;
             this.u = u;
             this.v = v;
+        }
+
+        //<editor-fold defaultstate="collapsed" desc="hashCode & equals">
+        @Override
+        public int hashCode() {
+            int hash = 3;
+            hash = 53 * hash + (int) (Double.doubleToLongBits(this.x) ^ (Double.doubleToLongBits(this.x) >>> 32));
+            hash = 53 * hash + (int) (Double.doubleToLongBits(this.y) ^ (Double.doubleToLongBits(this.y) >>> 32));
+            hash = 53 * hash + (int) (Double.doubleToLongBits(this.z) ^ (Double.doubleToLongBits(this.z) >>> 32));
+            hash = 53 * hash + (int) (this.color ^ (this.color >>> 32));
+            hash = 53 * hash + (int) (Double.doubleToLongBits(this.u) ^ (Double.doubleToLongBits(this.u) >>> 32));
+            hash = 53 * hash + (int) (Double.doubleToLongBits(this.v) ^ (Double.doubleToLongBits(this.v) >>> 32));
+            return hash;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (obj == null) {
+                return false;
+            }
+            if (getClass() != obj.getClass()) {
+                return false;
+            }
+            final Vertex other = (Vertex) obj;
+            if (Double.doubleToLongBits(this.x) != Double.doubleToLongBits(other.x)) {
+                return false;
+            }
+            if (Double.doubleToLongBits(this.y) != Double.doubleToLongBits(other.y)) {
+                return false;
+            }
+            if (Double.doubleToLongBits(this.z) != Double.doubleToLongBits(other.z)) {
+                return false;
+            }
+            if (this.color != other.color) {
+                return false;
+            }
+            if (Double.doubleToLongBits(this.u) != Double.doubleToLongBits(other.u)) {
+                return false;
+            }
+            if (Double.doubleToLongBits(this.v) != Double.doubleToLongBits(other.v)) {
+                return false;
+            }
+            return true;
+        }
+        //</editor-fold>
+
+        @Override
+        public String toString() {
+            return "Vertex{" + "x=" + x + ", y=" + y + ", z=" + z + ", color=" + color + ", u=" + u + ", v=" + v + '}';
         }
     }
 }
