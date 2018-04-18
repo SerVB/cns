@@ -29,7 +29,10 @@ import org.mockito.Mockito;
  *
  * @author SerVB
  */
-public class GameTest {
+public abstract class AbstractGameTest {
+    /** External path to fictive dir. */
+    public static final String CNS1_FICTIVE_DIR = "Dropbox/CNS/cns/fictive-cns1-dir/";
+
     /** "Test" application. */
     private static Application application;
 

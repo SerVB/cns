@@ -17,15 +17,13 @@ package com.github.servb.cns.preload;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
-import com.github.servb.cns.test.GameTest;
+import com.github.servb.cns.test.AbstractGameTest;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
 import static org.junit.Assert.fail;
 import org.junit.Test;
 
-public class PreloaderTest extends GameTest {
-
-    public static final String CNS1_FICTIVE_DIR = "Dropbox/CNS/cns/fictive-cns1-dir/";
+public final class PreloaderTest extends AbstractGameTest {
 
     @Test
     public void testConstructor() {
